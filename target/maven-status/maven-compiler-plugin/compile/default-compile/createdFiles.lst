@@ -1,0 +1,8 @@
+org/integrahackaton/conf/JPAConfiguration.class
+org/integrahackaton/dao/UserDAO.class
+org/integrahackaton/model/UserRepository.class
+org/integrahackaton/conf/AppWebConfiguration.class
+org/integrahackaton/model/User.class
+org/integrahackaton/controller/HelloWordController.class
+org/integrahackaton/controller/UserController.class
+org/integrahackaton/conf/ServletSpringMVC.class
