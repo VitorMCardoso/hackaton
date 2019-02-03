@@ -2,8 +2,6 @@ package org.integrahackaton.controller;
 
 import org.integrahackaton.dao.PersonDAO;
 import org.integrahackaton.model.Person;
-import org.integrahackaton.model.PersonRepository;
-import org.integrahackaton.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -15,7 +13,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/person")
@@ -23,9 +20,6 @@ public class PersonController {
 
     @Autowired
     private PersonDAO dao;
-
-    /*@Autowired
-    private PersonRepository personRepository;*/
 
     @RequestMapping("/form")
     public ModelAndView form(Person person) {
@@ -66,7 +60,6 @@ public class PersonController {
     public ModelAndView detalhe(@PathVariable String doc) {
         ModelAndView modelAndView = new ModelAndView("person/find");
         List<Person> personList = dao.findByDoc(doc);
-        //Person person = personRepository.search(doc);
         modelAndView.addObject("person", personList);
         return modelAndView;
     }

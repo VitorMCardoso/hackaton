@@ -23,14 +23,14 @@ public class JPAConfiguration {
         factoryBean.setJpaVendorAdapter(vendorAdapter);
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUsername("root");
-        dataSource.setPassword("0122607");
-        dataSource.setUrl("jdbc:mariadb://localhost:3306/hackaton");
+        dataSource.setUsername("sql10277117");
+        dataSource.setPassword("ZVVB4tmHug");
+        dataSource.setUrl("jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10277117");
         dataSource.setDriverClassName("org.mariadb.jdbc.Driver");
         factoryBean.setDataSource(dataSource);
 
         Properties properties = new Properties();
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MariaDB103Dialect");
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
         properties.setProperty("hibernate.show_sql", "true");
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
         factoryBean.setJpaProperties(properties);

@@ -40,4 +40,14 @@ public class PersonDAO {
         //return manager(Person.class);
     }
 
+    public List<Person> findByNome(String nome) {
+        String jpql = "FROM person p WHERE p.nome LIKE '%'||:pDoc||'%'";
+        TypedQuery<Person> query = manager.createQuery(jpql, Person.class);
+        query.setParameter("pDoc", nome);
+        return query.getResultList();
+        //Query q = manager.createQuery("FROM person p WHERE p.documento =:arg1", Person.class);
+        //q.setParameter("arg1", documento).getSingleResult();
+        //return manager(Person.class);
+    }
+
 }
