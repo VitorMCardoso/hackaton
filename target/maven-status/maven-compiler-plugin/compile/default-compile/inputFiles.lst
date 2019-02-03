@@ -3,6 +3,10 @@
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/model/UserRepository.java
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/conf/AppWebConfiguration.java
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/dao/UserDAO.java
+/home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/model/PersonRepository.java
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/model/User.java
+/home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/controller/PersonController.java
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/controller/UserController.java
+/home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/model/Person.java
 /home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/controller/HelloWordController.java
+/home/vitor/Documents/JavaProjects/Hackaton/integrahackaton/src/main/java/org/integrahackaton/dao/PersonDAO.java
