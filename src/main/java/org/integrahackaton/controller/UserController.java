@@ -24,9 +24,6 @@ public class UserController {
     @Autowired
     private UserDAO dao;
 
-	/*@Autowired
-	private UserRepository repo;*/
-
     @RequestMapping("/form")
     public ModelAndView form(User produto) {
         ModelAndView modelAndView = new ModelAndView("user/form");
@@ -54,11 +51,11 @@ public class UserController {
 
     }
 
-    /*@RequestMapping("/detalhe")
-    public ModelAndView detalhe(Integer id) {
-        ModelAndView modelAndView = new ModelAndView();
+    @RequestMapping("/detalhe/{id}")
+    public ModelAndView detalhe(@PathVariable Integer id) {
+        ModelAndView modelAndView = new ModelAndView("user/find");
         User user = dao.find(id);
         modelAndView.addObject("user", user);
         return modelAndView;
-    }*/
+    }
 }
